@@ -29,3 +29,21 @@ function isVowel (input) {
         return false;
     }
 }
+
+//Exercise 13
+function add(num1, num2){
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+    let sum = num1 + num2;
+
+    // if(sum == NaN) {
+    //     return NaN;
+    // }
+    return sum;
+    /*
+    * Find a work around to make the test pass. Per J:
+    * "It has also come to my attention that the very last test of exercise #13 has an error.
+    * We cannot expect the return value to equal NaN. In other words NaN === NaN  will not work.
+    * Gary and Adam have found a work around".
+    * */
+}

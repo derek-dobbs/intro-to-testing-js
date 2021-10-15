@@ -112,3 +112,23 @@ describe('isVowel', function () {
         expect(isVowel()).toBe(false);
     });
 });
+
+//Exercise 13
+describe('add', function () {
+    it('should return 5 when 2 is added to 3', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return -12 when -3 is added to -9', function () {
+        expect(add(2, 3)).toBe(5);
+    });
+    it('should return 11 when "5" is added to 6', function () {
+        expect(add("5", 6)).toBe(11);
+    });
+    it('should return 6 when -4 is added to 10', function () {
+        expect(add(-4, 10)).toBe(6);
+    });
+    it('should return NaN when "banana" is added to "split"', function () {
+        expect(add("banana", "split")).toBe(NaN);
+    });
+
+});
