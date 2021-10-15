@@ -19,5 +19,12 @@ describe('sayHello', function () {
     it('should be defined as a function', function () {
         expect(typeof sayHello).toBe('function');
     });
+    it('should return a string', function () {
+        expect(typeof sayHello()).toBe('string');
+    });
+    it('should never return undefined', function(){
+        expect(typeof sayHello()).not.toBe('undefined');
+    });
+
 });
 
