@@ -30,3 +30,18 @@ describe('sayHello', function () {
     });
 });
 
+//Exercise 10
+describe('isFive', function () {
+    it('should be defined as a function', function (){
+        expect(typeof isFive).toBe('function');
+    });
+    it('should return a boolean', function () {
+        expect(typeof isFive()).toBe('boolean');
+    });
+    it('should return true when the number 5 is passed', function () {
+        expect(isFive(5)).toBe(true);
+    });
+    it('should return true when the string "5" is passed', function () {
+        expect(isFive("5")).toBe(true);
+    });
+});
