@@ -4,5 +4,5 @@ function helloWorld() {
 }
 
 function sayHello() {
-    return typeof '';
+    return 'Hello Derek';
 }
