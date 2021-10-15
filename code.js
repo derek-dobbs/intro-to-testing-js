@@ -11,3 +11,12 @@ function sayHello(input) {
 function isFive(input) {
     return input == 5;
 }
+
+//Exercise 11
+function isEven(input) {
+    if(typeof input != 'boolean') {
+        return input % 2 == 0;
+    }else {
+        return false;
+    }
+}
