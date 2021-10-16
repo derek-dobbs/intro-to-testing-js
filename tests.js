@@ -130,5 +130,11 @@ describe('add', function () {
     it('should return NaN when "banana" is added to "split"', function () {
         expect(add("banana", "split")).toBe(NaN);
     });
+    it('should return NaN when 2 is added to "apples"', function () {
+        expect(add(2, "apples")).toBe(NaN);
+    });
+    it('should return NaN when add() is called with an empty argument', function () {
+        expect(add()).toBe(NaN);
+    });
 
 });

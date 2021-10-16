@@ -36,12 +36,15 @@ function add(num1, num2){
     num2 = parseFloat(num2);
     let sum = num1 + num2;
 
-    // if(sum == NaN) {
-    //     return NaN;
-    // }
+    if (isNaN(sum)) {
+        return NaN;
+    }
     return sum;
     /*
-    * Find a work around to make the test pass. Per J:
+    * The above code works properly. When I changed "return NaN" to "return 'not a number' and
+    * adjusted the test, it passed. The problem seems to be with the function returning "NaN".
+    * Find a work around to make the test pass.
+    * Per Jay:
     * "It has also come to my attention that the very last test of exercise #13 has an error.
     * We cannot expect the return value to equal NaN. In other words NaN === NaN  will not work.
     * Gary and Adam have found a work around".
