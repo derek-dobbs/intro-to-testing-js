@@ -36,9 +36,5 @@ function add(num1, num2){
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
     let sum = num1 + num2;
-
-    if (isNaN(sum)) {
-        return NaN;
-    }
     return sum;
 }
