@@ -17,18 +17,16 @@ function isFive(input) {
 function isEven(input) {
     if(typeof input != 'boolean') {
         return input % 2 == 0;
-    }else {
-        return false;
     }
+    return false;
 }
 
 //Exercise 12
 function isVowel (input) {
     if(input === "a" || input === "A"){
         return true;
-    }else {
-        return false;
     }
+    return false;
 }
 
 //Exercise 13
