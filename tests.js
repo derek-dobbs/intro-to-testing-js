@@ -14,7 +14,7 @@ describe('helloWorld', function() {
     });
 });
 
-//Write a test function named 'sayHello'.
+//Exercises 1-9
 describe('sayHello', function () {
     it('should be defined as a function', function () {
         expect(typeof sayHello).toBe('function');
@@ -128,13 +128,13 @@ describe('add', function () {
         expect(add(-4, 10)).toBe(6);
     });
     it('should return NaN when "banana" is added to "split"', function () {
-        expect(add("banana", "split")).toBe(NaN);
+        expect(add("banana", "split")).toBeNaN();
     });
     it('should return NaN when 2 is added to "apples"', function () {
-        expect(add(2, "apples")).toBe(NaN);
+        expect(add(2, "apples")).toBeNaN();
     });
     it('should return NaN when add() is called with an empty argument', function () {
-        expect(add()).toBe(NaN);
+        expect(add()).toBeNaN();
     });
 
 });

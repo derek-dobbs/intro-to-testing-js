@@ -3,6 +3,7 @@ function helloWorld() {
     return "Hello, World!";
 }
 
+//Exercises 1-9
 function sayHello(input) {
     return 'Hello ' + input;
 }
@@ -40,13 +41,4 @@ function add(num1, num2){
         return NaN;
     }
     return sum;
-    /*
-    * The above code works properly. When I changed "return NaN" to "return 'not a number' and
-    * adjusted the test, it passed. The problem seems to be with the function returning "NaN".
-    * Find a work around to make the test pass.
-    * Per Jay:
-    * "It has also come to my attention that the very last test of exercise #13 has an error.
-    * We cannot expect the return value to equal NaN. In other words NaN === NaN  will not work.
-    * Gary and Adam have found a work around".
-    * */
 }
